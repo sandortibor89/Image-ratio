@@ -14,6 +14,11 @@ This is the result of the above example:
 - 2:1
 - 1:2
 ## Use
+Include css file in head
+```sh
+<link rel="stylesheet" type="text/css" href="image-ratio.css">
+```
+and use imd-ratio class
 ```sh
 <div class="img-ratio-2-1">
     <img src="http://placehold.it/350x150">
