@@ -16,7 +16,7 @@ This is the result of the above example:
 ## Use
 ```sh
 <div class="img-ratio-2-1">
-	<img src="http://placehold.it/350x150">
+    <img src="http://placehold.it/350x150">
 </div>
 ```
 **Free Software, Hell Yeah!**
