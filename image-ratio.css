@@ -1,0 +1,47 @@
+div[class^="img-ratio"] {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  text-align: center; }
+  div[class^="img-ratio"]:after {
+    display: block;
+    content: ''; }
+  div[class^="img-ratio"] img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0; }
+  div[class^="img-ratio"] > a {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%; }
+
+/* Included ratios */
+div.img-ratio-1-1:after {
+  padding-top: 100%; }
+
+div.img-ratio-3-2:after {
+  padding-top: 66.66667%; }
+
+div.img-ratio-2-3:after {
+  padding-top: 150%; }
+
+div.img-ratio-4-3:after {
+  padding-top: 75%; }
+
+div.img-ratio-3-4:after {
+  padding-top: 133.33333%; }
+
+div.img-ratio-16-9:after {
+  padding-top: 56.25%; }
+
+div.img-ratio-9-16:after {
+  padding-top: 177.77778%; }
+
+/*# sourceMappingURL=image-ratio.css.map */
