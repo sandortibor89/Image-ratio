@@ -1,0 +1,38 @@
+@mixin img-ratio($w, $h) {
+	div.img-ratio-#{$w}-#{$h} {
+		&:after {
+			padding-top: ($h/$w)*100%;
+		}
+	}
+}
+
+div[class^="img-ratio"] {
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	&:after {
+		display: block;
+		content: '';
+	}
+	img {
+		object-fit: cover;
+		min-width: 100%;
+		min-height: 100%;
+		margin: auto;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+	}
+	> a {
+		display: block;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+/* Included ratios */
+
+@include img-ratio(3, 2);
