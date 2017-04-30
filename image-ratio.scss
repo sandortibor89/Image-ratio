@@ -1,11 +1,11 @@
 @mixin img-ratio($w, $h) {
-	div.img-ratio-#{$w}-#{$h} {
+	.img-ratio-#{$w}-#{$h} {
 		&:after {
 			padding-top: ($h/$w)*100%;
 		}
 	}
 	@if $w != $h {
-		div.img-ratio-#{$h}-#{$w} {
+		.img-ratio-#{$h}-#{$w} {
 			&:after {
 				padding-top: ($w/$h)*100%;
 			}
@@ -13,7 +13,7 @@
 	}
 }
 
-div[class^="img-ratio"] {
+[class^="img-ratio"] {
 	width: 100%;
 	position: relative;
 	overflow: hidden;
